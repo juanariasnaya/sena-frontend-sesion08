@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tarjetas de Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Tarjetas de Perfil</h1>
+        
+        <form id="profile-form">
+            <input type="text" id="input-name" placeholder="Nombre completo" required>
+            <input type="text" id="input-role" placeholder="Cargo" required>
+            <input type="text" id="input-dept" placeholder="Departamento" required>
+            <input type="url" id="input-photo" placeholder="URL de la fotografía" required>
+            <button type="submit">Generar tarjeta</button>
+        </form>
+
+        <div class="counter-section">
+            <p>Tarjetas creadas: <span id="card-counter">0</span></p>
+        </div>
+
+        <div id="cards-container" class="cards-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
